@@ -1,3 +1,9 @@
+# Preview
+
+This is what the homepage looks like.
+
+![asda](src/opend_frontend/assets/home.png)
+
 # To Install and Run the Project
 
 1. start local dfx
