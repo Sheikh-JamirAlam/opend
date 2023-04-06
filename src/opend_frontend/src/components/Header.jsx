@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import logo from "../../assets/logo.png";
-import { HashRouter, Link, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
 import homeImage from "../../assets/home-img.png";
 import Minter from "./Minter";
 import Gallery from "./Gallery";
@@ -24,7 +24,7 @@ function Header() {
   }, []);
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div className="app-root-1">
         <header className="Paper-root AppBar-root AppBar-positionStatic AppBar-colorPrimary Paper-elevation4">
           <div className="Toolbar-root Toolbar-regular header-appBar-13 Toolbar-gutters">
@@ -54,7 +54,7 @@ function Header() {
         <Route path="/minter" element={<Minter />} />
         <Route path="/collection" element={userOwnedGallery} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
